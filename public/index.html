@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FinTech</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="/ftadvert-wc.js"></script>
+  <script src="/ftpayment-wc.js"></script>
+  <script src="/ftactivity-wc.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="#">FinTech</a>
+        </div>
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="row">
+            <div class="col-sm-12" style="background-color:lavender;">
+				<!--#echo var="DATE_LOCAL" -->
+			</div>			
+    </div>    
+    <div class="row">
+            <div class="col-sm-12" style="background-color:lavender;">
+				<ftpayment-dashboard></ft-payment>
+			</div>			
+    </div>    
+    <div class="row">
+            <div class="col-sm-6" style="background-color:lavenderblush;">
+				<ftactivity-dashboard></ft-activity>
+			</div>
+            <div class="col-sm-6" style="background-color:lavender;">
+				<ftadvert-dashboard></ft-advert>
+			</div>
+    </div>    
+</div>
+
+</body>
+</html>
